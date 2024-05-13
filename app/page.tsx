@@ -1,13 +1,21 @@
 import Card from "@/components/Card";
 import Image from "next/image";
 import Hero from "./components/Hero";
-import CTA from "./components/CTA";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
     <>
-      <CTA />
-      {/* <Hero /> */}
+      <Hero />
+      {/* company overview */}
+      {/* product or services */}
+      {/* Testimonials */}
+      {/* company overview */}
+      {/* company logo */}
+      {/* company tagline */}
+      {/* company overview */}
+      {/* About Us */}
+      {/* Products */}
       <div className=" flex flex-row gap-5">
         <Card>
           <Image
@@ -50,6 +58,7 @@ export default function Home() {
           />
         </Card>
       </div>
+      <Testimonials/>      
     </>
   );
 }

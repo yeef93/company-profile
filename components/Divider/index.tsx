@@ -1,6 +1,7 @@
 interface DividerProps {
   text: string;
 }
+
 function Divider({ text }: DividerProps) {
   return (
     <div className=" w-full sm:grid sm:grid-cols-auto sm:items-center">

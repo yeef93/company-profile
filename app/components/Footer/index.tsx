@@ -4,6 +4,7 @@ import fb from "@/public/assets/socmed/facebook.png";
 import ig from "@/public/assets/socmed/instagram.png";
 import tw from "@/public/assets/socmed/twitter.png";
 import yt from "@/public/assets/socmed/youtube.png";
+import Logo from "@/public/assets/logo.png"
 
 function Footer() {
   return (
@@ -29,10 +30,11 @@ function Footer() {
       </div>
       <div className="mx-6 px-20 py-10 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="md:col-span-2 lg:col-span-2 lg:pr-12">
-            <h6 className="mb-4 flex items-center justify-center md:justify-start font-semibold uppercase border-b-2 border-white">
-              Bon Appétit
-            </h6>
+          <div className="md:col-span-2 lg:col-span-2 lg:pr-12">            
+            <h1 className="mb-4 flex items-center justify-center md:justify-start font-semibold uppercase border-b-2 border-white">
+            <Image src={Logo} width={32} alt="Bon Appétit Logo" />
+            Bon Appétit
+            </h1>
             <p>
               Bon Appétit is a market leading educator that is revolving around
               the Cookery and Pastry industry. As a school who dedicates all of
@@ -44,9 +46,9 @@ function Footer() {
             </p>
           </div>
           <div className="md:col-span-1 lg:col-span-1">
-            <h6 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
+            <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
               About Us
-            </h6>
+            </h1>
             <p className="mb-4">
               <a href="#!">Angular</a>
             </p>
@@ -61,9 +63,9 @@ function Footer() {
             </p>
           </div>
           <div className="md:col-span-1 lg:col-span-1">
-            <h6 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
+            <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
               Course
-            </h6>
+            </h1>
             <p className="mb-4">
               <a href="#!">Pricing</a>
             </p>
@@ -78,9 +80,9 @@ function Footer() {
             </p>
           </div>
           <div className="md:col-span-2 lg:col-span-1">
-            <h6 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
+            <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
               Contact
-            </h6>
+            </h1>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               Tj. Uma,Kec. Lubuk Baja,Kota Batam,
               <br />
@@ -100,9 +102,9 @@ function Footer() {
       </div>
 
       <div className=" bg-darkTangerine p-6 text-center">
-        <a className="font-semibold text-xs">
+        <span className="font-semibold text-xs">
           made with ❤️ by Yuninda Faranika
-        </a>
+        </span>
       </div>
     </footer>
   );
