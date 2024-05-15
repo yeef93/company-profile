@@ -1,17 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/assets/logo.png"
+import Logo from "@/public/assets/logo-orange.png";
 
 function Header() {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image
-            src={Logo}
-            width={32}
-            alt="Bon Appétit Logo"
-          />
+          <Image src={Logo} width={32} alt="Bon Appétit Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-darkTangerine">
             Bon Appétit
           </span>
@@ -86,7 +83,7 @@ function Header() {
             </li>
             <li>
               <a
-                href="/Teams"
+                href="/teams"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent 
                 md:hover:text-darkTangerine md:p-0"
               >

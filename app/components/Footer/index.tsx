@@ -4,7 +4,7 @@ import fb from "@/public/assets/socmed/facebook.png";
 import ig from "@/public/assets/socmed/instagram.png";
 import tw from "@/public/assets/socmed/twitter.png";
 import yt from "@/public/assets/socmed/youtube.png";
-import Logo from "@/public/assets/logo.png"
+import Logo from "@/public/assets/logo-white.png"
 
 function Footer() {
   return (
@@ -32,7 +32,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="md:col-span-2 lg:col-span-2 lg:pr-12">            
             <h1 className="mb-4 flex items-center justify-center md:justify-start font-semibold uppercase border-b-2 border-white">
-            <Image src={Logo} width={32} alt="Bon Appétit Logo" />
+            <Image src={Logo} width={20} alt="Bon Appétit Logo" />
             Bon Appétit
             </h1>
             <p>

@@ -8,19 +8,31 @@ body {
   background: #ffffff;
 }
 
-main{
+main {
   padding: 10vh;
 }
 
-@keyframes moveLooping {
+@keyframes objectLooping {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-200%);
   }
 }
 
-.animate-moveLooping {
+.animate-objectLooping {
   animation: moveLooping 30s linear infinite;
+}
+
+.highlight {
+  margin: 0;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-color: #ffa500;
+  text-decoration-thickness: 8px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -4px;
+  
 }
