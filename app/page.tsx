@@ -16,48 +16,6 @@ export default function Home() {
       {/* company overview */}
       {/* About Us */}
       {/* Products */}
-      <div className=" flex flex-row gap-5">
-        <Card>
-          <Image
-            className="relative"
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </Card>
-        <Card className=" hover:bg-tangerine">
-          <Image
-            className="relative "
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </Card>
-        <Card className=" hover:bg-tangerine">
-          <Image
-            className="relative"
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </Card>
-        <Card className=" hover:bg-tangerine">
-          <Image
-            className="relative"
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </Card>
-      </div>
       <Testimonials/>      
     </>
   );
