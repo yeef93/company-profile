@@ -1,7 +1,8 @@
+import BackgroundImage from "@/components/BackgroundImage";
 import Title from "@/components/Title";
 
 function About() {
-  return <h1 className=" text-lg font-extrabold highlight">About Us</h1>;
+  return <Title className=" pt-20 highlight"> About Us</Title>;
 }
 
 export default About;

@@ -5,7 +5,7 @@ import Logo from "@/public/assets/logo-white.png";
 
 function Footer() {
   return (
-    <footer className="text-center text-surface/75 bg-tangerine text-white lg:text-left text-xs">
+    <footer className="text-center text-surface/75 bg-tangerine text-white lg:text-left text-xs ">
       <div className="flex items-center justify-center border-b-2 px-24 py-2 border-white/10 lg:justify-between">
         <div className="me-12 hidden lg:block">
           <span>Get connected with us on social networks:</span>
@@ -15,7 +15,7 @@ function Footer() {
             return (
               <a key={item.id} href={item.url} className="me-4 hover:opacity-30">
                 <Image
-                  src={`/assets/socmed/${item.image}`} // Update this line
+                  src={`/assets/socmed/${item.image}`} 
                   alt={item.name}
                   width={20}
                   height={20}
