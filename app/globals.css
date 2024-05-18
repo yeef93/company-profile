@@ -31,8 +31,8 @@ main {
   line-height: 1.5;
   text-decoration: underline;
   text-decoration-color: #ffa500;
-  text-decoration-thickness: 8px;
+  text-decoration-thickness: 20px;
   text-decoration-skip-ink: none;
-  text-underline-offset: -4px;
+  text-underline-offset: -15px;
   
 }

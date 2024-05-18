@@ -1,10 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import fb from "@/public/assets/socmed/facebook.png";
-import ig from "@/public/assets/socmed/instagram.png";
-import tw from "@/public/assets/socmed/twitter.png";
-import yt from "@/public/assets/socmed/youtube.png";
-import Logo from "@/public/assets/logo-white.png"
+import socmeddata from "@/utils/socmed";
+import Logo from "@/public/assets/logo-white.png";
 
 function Footer() {
   return (
@@ -14,26 +11,27 @@ function Footer() {
           <span>Get connected with us on social networks:</span>
         </div>
         <div className="flex justify-center">
-          <a href="#!" className="me-4 hover:opacity-30 ">
-            <Image src={fb} alt="fb Logo" width={20} height={20} priority />
-          </a>
-          <a href="#!" className="me-4 hover:opacity-30">
-            <Image src={ig} alt="ig Logo" width={20} height={20} priority />
-          </a>
-          <a href="#!" className="me-4 hover:opacity-30">
-            <Image src={tw} alt="tw Logo" width={20} height={20} priority />
-          </a>
-          <a href="#!" className="me-4 hover:opacity-30">
-            <Image src={yt} alt="yt Logo" width={20} height={20} priority />
-          </a>
+          {socmeddata.map((item) => {
+            return (
+              <a key={item.id} href={item.url} className="me-4 hover:opacity-30">
+                <Image
+                  src={`/assets/socmed/${item.image}`} // Update this line
+                  alt={item.name}
+                  width={20}
+                  height={20}
+                  priority
+                />
+              </a>
+            );
+          })}
         </div>
       </div>
       <div className="mx-6 px-20 py-10 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="md:col-span-2 lg:col-span-2 lg:pr-12">            
+          <div className="md:col-span-2 lg:col-span-2 lg:pr-12">
             <h1 className="mb-4 flex items-center justify-center md:justify-start font-semibold uppercase border-b-2 border-white">
-            <Image src={Logo} width={20} alt="Bon Appétit Logo" />
-            Bon Appétit
+              <Image src={Logo} alt="Bon Appétit Logo" width={20} height={20} />
+              Bon Appétit
             </h1>
             <p>
               Bon Appétit is a market leading educator that is revolving around
@@ -101,7 +99,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className=" bg-darkTangerine p-6 text-center">
+      <div className="bg-darkTangerine p-6 text-center">
         <span className="font-semibold text-xs">
           made with ❤️ by Yuninda Faranika
         </span>

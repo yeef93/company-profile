@@ -1,26 +1,27 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default[
     {
         id: 0,
-        image: "Decodable.co",
-        groupName: "Cuisine",
-        programName: "Cuisine Class"   
+        name: "fb",
+        image: "facebook.png",
+        url: "https://www.facebook.com/",
     },
     {
         id: 1,
-        image: "Decodable.co",
-        groupName: "Patisserie",
-        programName: "Patisserie Class"   
+        name: "ig",
+        image: "instagram.png",
+        url: "https://www.instagram.com/",
     },
     {
         id: 2,
-        image: "Decodable.co",
-        groupName: "Barista",
-        programName: "Celebrity Chef"   
+        name: "twitter",
+        image: "twitter.png",
+        url: "https://www.twitter.com/",
     },
     {
         id: 3,
-        image: "Decodable.co",
-        groupName: "Barista",
-        programName: "Barista Class With Viki Rahardja"   
+        name: "yt",
+        image: "youtube.png",
+        url: "https://www.youtube.com/",  
     }
 ]

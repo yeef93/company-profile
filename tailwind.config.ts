@@ -17,7 +17,12 @@ const config: Config = {
         darkTangerine: '#eb360e',
         tangerine: '#ff4a22',
         oranges: '#fe9d41',
-        stabiloTangerine: "#ffa500"
+        stabiloOrange: "#ffa500"
+      },
+      screens: {
+        'sm': '375px',
+        'md': '768px',  
+        'lg': '1024px',  
       },
     },
   },

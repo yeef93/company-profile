@@ -1,11 +1,15 @@
+import { ReactNode } from "react";
 interface TitleProps {
-  text: string;
+  className?: string;
+  children: ReactNode;
 }
 
-function Title({ text }: TitleProps) {
+function Title({ children, className }: TitleProps) {
   return (
-    <h3 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      {text}
+    <h3
+      className={`text-center lg:text-4xl sm:text-sm font-bold tracking-tight text-gray-900 sm:text-5xl${className}`}
+    >
+      {children}
     </h3>
   );
 }
