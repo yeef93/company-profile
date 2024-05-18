@@ -4,7 +4,7 @@ import BackgroundImage from "@/components/BackgroundImage";
 
 function About() {
   return (
-    <div className=" h-full pt-">
+    <div className=" h-full">
       <BackgroundImage imageUrl="bg1.jpg">-</BackgroundImage>
       <TwoContent title="About Us">
         <div>
