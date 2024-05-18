@@ -1,10 +1,11 @@
 import Image from "next/image";
 import hero from "@/public/assets/hero.jpg";
 import Button from "@/components/Button";
+import DottedPattern from "@/components/DottedPattern";
 
 function Hero() {
   return (
-    <div className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center lg:py-24 lg:px-20 md:px-0">
+    <div className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center lg:py-24 lg:px-20 md:px-0 sm:pt-10 ">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-left">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -26,6 +27,9 @@ function Hero() {
         </div>
       </div>
       <div className="flex items-center justify-center">
+        <span className="relative inline-block">
+          <DottedPattern />
+        </span>
         <Image
           alt="cta"
           src={hero}
