@@ -1,6 +1,6 @@
 function Teams(){
     return(
-        <div>Teams</div>
+        <section>Teams</section>
     )
 }
 

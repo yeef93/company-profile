@@ -1,8 +1,8 @@
 function Program(){
     return(
-        <div className=" grid grid-cols-3">
+        <section className=" grid grid-cols-3">
 
-        </div>
+        </section>
     )
 }
 

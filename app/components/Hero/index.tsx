@@ -5,7 +5,7 @@ import DottedPattern from "@/components/DottedPattern";
 
 function Hero() {
   return (
-    <div className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center lg:py-14 lg:px-20 md:px-0 sm:pt-10">
+    <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center lg:py-14 lg:px-20 md:px-0 sm:pt-10">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-left">
           <h2 className="text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
@@ -67,7 +67,7 @@ function Hero() {
           className="w-full sm:w-[30vw] object-cover sm:h-[calc(100%-2rem)] sm:self-end sm:rounded-[30px] md:h-[calc(100%-4rem)] md:rounded-[60px]"
         />
       </div>
-    </div>
+    </section>
   );
 }
 
