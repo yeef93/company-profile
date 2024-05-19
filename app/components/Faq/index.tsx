@@ -1,16 +1,20 @@
-import Title from "@/components/Title";
+import Accordion from "@/components/Accoordion";
+import TwoContent from "@/components/TwoContent";
+import faqdata from "@/utils/faq";
 
-function Faq(){
-    return(
-        <>
-        <div className=" col-span-1">
-            <Title>Frequently <span className=" highlight">Asked</span> Questions</Title>
+function Faq() {
+  return (
+    <div className=" h-full">
+      <TwoContent title="Frequently Asked Questions">
+        <div className="mx-auto grid max-w-xl divide-y divide-neutral-200">
+        {faqdata.map((item) => {
+            return (
+          <Accordion  key={item.id} answer={item.question} question={item.answer} />);
+        })}
         </div>
-        <div className=" col-span-2">
-            kdhasjdgadhaskasjdashk
-        </div>
-        </>
-    )
+      </TwoContent>
+    </div>
+  );
 }
 
 export default Faq;

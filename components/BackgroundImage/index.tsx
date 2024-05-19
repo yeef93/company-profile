@@ -9,7 +9,7 @@ function BackgroundImage({ children, imageUrl }: TitleProps) {
     const imagePath = "/assets/bgImage/";
   return (
     <div
-      className=" h-96"
+      className=" lg:h-96 sm:h-36"
       style={{
         backgroundImage: `url(${imagePath}${imageUrl})`,
         backgroundSize: "cover",

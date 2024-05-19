@@ -30,7 +30,7 @@ function Hero() {
           </p>
           <Button text="Join Us" />
         </div>
-        <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8">
+        <div className="pt-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-y-8 ">
           <div className="mb-12 text-center border-r-0 md:mb-0 md:border-r-2 md:last:border-r-0">
             <div className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl text-darkTangerine">
               6
