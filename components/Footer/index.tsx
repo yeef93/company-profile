@@ -2,8 +2,12 @@ import React from "react";
 import Image from "next/image";
 import socmeddata from "@/utils/socmed";
 import Logo from "@/public/assets/logo-white.png";
+import programs from "@/utils/program"; // Import the programs data
 
 function Footer() {
+  // Extract unique group names
+  const uniqueGroupNames = [...new Set(programs.map(program => program.groupName))];
+
   return (
     <footer className="text-center text-surface/75 bg-tangerine text-white lg:text-left text-xs ">
       <div className="flex items-center justify-center border-b-2 px-24 py-2 border-white/10 lg:justify-between">
@@ -62,20 +66,13 @@ function Footer() {
           </div>
           <div className="md:col-span-1 lg:col-span-1">
             <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
-              Course
+              Our Programs
             </h1>
-            <p className="mb-4">
-              <a href="#!">Pricing</a>
-            </p>
-            <p className="mb-4">
-              <a href="#!">Settings</a>
-            </p>
-            <p className="mb-4">
-              <a href="#!">Orders</a>
-            </p>
-            <p>
-              <a href="#!">Help</a>
-            </p>
+            {uniqueGroupNames.map(groupName => (
+              <p className="mb-4" key={groupName}>
+                <a href="#!">{groupName}</a>
+              </p>
+            ))}
           </div>
           <div className="md:col-span-2 lg:col-span-1">
             <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
