@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "@/public/assets/hero.jpg";
+import hero from "@/public/assets/hero/hero.webp";
 import Button from "@/components/Button";
 import DottedPattern from "@/components/DottedPattern";
 
@@ -62,7 +62,7 @@ function Hero() {
           <DottedPattern />
         </span>
         <Image
-          alt="cta"
+          alt="hero"
           src={hero}
           className="w-full sm:w-[30vw] object-cover sm:h-[calc(100%-2rem)] sm:self-end sm:rounded-[30px] md:h-[calc(100%-4rem)] md:rounded-[60px]"
         />
