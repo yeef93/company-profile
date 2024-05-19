@@ -7,8 +7,8 @@ interface TwoContentProps {
 
 function TwoContent({ title, children }: TwoContentProps) {
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 pt-10 sm:px-4 mb-6">
-      <div className="h-32 flex items-start  justify-start pl-20">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 pt-10 lg:px-16 sm:px-4 mb-6">
+      <div className="lg:h-32 sm:h-10 flex items-start  justify-start pl-20">
         <h1 className=" lg:text-4xl md:text-lg sm:text-2xl capitalize">
           {title}
         </h1>
