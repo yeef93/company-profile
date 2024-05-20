@@ -13,7 +13,7 @@ const TeamList: React.FC = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <section className="bg-white h-1/2 w-full">
+    <section className="bg-[#fafafb] h-1/2 w-full">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
           Teams

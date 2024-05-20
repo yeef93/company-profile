@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Testimonials() {
   return (
-    <section className="bg-yellow-300 ">
+    <section className="bg-[#fafafb] ">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">Testimonial</h2>
         <Title>What people are <span className=" highlight">saying.</span></Title>

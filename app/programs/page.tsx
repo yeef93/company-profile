@@ -2,6 +2,7 @@
 import Title from "@/components/Title";
 import programdata from "@/utils/program";
 import Image from "next/image";
+import Testimonials from "../components/Testimonials";
 
 function Programs() {
   return (
@@ -42,13 +43,9 @@ function Programs() {
                 <div className="w-full sm:w-1/2 mb-4 px-2 ">
                   <div className="h-full py-4 px-6 border border-yellow-300 border-t-0 border-l-0 rounded-br-xl">
                     <h3 className="text-2xl font-bold text-md mb-6">
-                      Dynamic Personalization:
+                      Overview:
                     </h3>
-                    <p className="text-sm">
-                      Our platform leverages user data and behavior to provide a
-                      highly personalized experience, with dynamic content and
-                      product recommendations that change in real-time.
-                    </p>
+                    <p className="text-sm">{item.overview}</p>
                   </div>
                 </div>
                 <div className="w-full sm:w-1/2 mb-4 px-2 ">
@@ -80,16 +77,12 @@ function Programs() {
                   </div>
                 </div>
 
-                <div className="w-full sm:w-1/2 mb-4 px-2 ">
-                  <div className="h-full py-4 px-6 border border-yellow-500 border-t-0 border-l-0 rounded-br-xl">
-                    <h3 className="text-2xl font-bold text-md mb-6">
-                      Secure Payment Processing
+                <div className="w-full sm:w-1/2 mb-4 px-2">
+                  <div className="h-full py-4 px-6 border border-yellow-500 border-t-0 border-l-0 rounded-br-xl bg-yellow-500 font-bold">
+                    Price:
+                    <h3 className=" text-8xl font-bold text-md mb-6 text-white">
+                      {item.price}
                     </h3>
-                    <p className="text-sm">
-                      We use cutting-edge security measures to protect our
-                      customers sensitive information and ensure the safety of
-                      all transactions made on our site.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -97,6 +90,8 @@ function Programs() {
           </div>
         );
       })}
+
+      <Testimonials/>
     </section>
   );
 }
