@@ -16,8 +16,7 @@ function Header() {
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <button
             type="button"
-            className="text-white bg-tangerine hover:bg-darkTangerine focus:ring-4 focus:outline-none focus:ring-darkTangerine 
-            font-medium rounded-lg text-sm px-4 py-2 text-center "
+            className="text-white bg-darkTangerine hover:bg-darkerTangerine focus:ring-4 focus:outline-none focus:ring-darkTangerine font-medium rounded-lg text-sm px-4 py-2 text-center"
           >
             Register
           </button>

@@ -5,6 +5,7 @@ import About from "./components/About";
 import Promote from "./components/Promote";
 import Programs from "./programs/page";
 import Teams from "./components/Teams";
+import DataFetcher from "@/hooks/DataFetcher"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials/>
       <Faq/>    
       <Teams/>
+      <DataFetcher/>
     </>
   );
 }

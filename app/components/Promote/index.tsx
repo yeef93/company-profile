@@ -7,7 +7,7 @@ function Promote() {
     <section className="bg-yellow-300 py-4 ">
       <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <Title>
-           <span className=" highlight">Bon Appétit?</span>
+           Why <span className=" highlight">Bon Appétit?</span>
         </Title>
         <p className=" text-center text-gray-800">
           With over 6 years of dedicated teaching, we have honed our curriculum
@@ -22,7 +22,7 @@ function Promote() {
               className="md:p-8 flex flex-col justify-center items-center"
             >
               <div
-                className={`w-14 h-14 rounded-full flex justify-center items-center bg-stabiloOrange`}
+                className={`w-14 h-14 rounded-full flex justify-center items-center bg-white`}
               >
                 <Image
                   alt={item.title}
