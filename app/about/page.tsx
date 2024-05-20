@@ -11,8 +11,8 @@ function About() {
             About Us
           </h2>
           <Title>
-           About
-            <span className=" highlight">Bon Appétit</span>
+           About 
+            <span className=" highlight"> Bon Appétit</span>
           </Title>          
         </div>
       </div>

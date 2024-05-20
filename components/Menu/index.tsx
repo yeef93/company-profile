@@ -1,19 +1,46 @@
-"use client";
-import MenuContext from "@/context/MenuContext";
-import { useContext } from "react";
-
-function Menu(){
-  const { menuShowing, setShowing } = useContext(MenuContext);
-  const handleHideMenu = () => {
-    setShowing();
-  }
-  if (!menuShowing) return null;
+function Menu() {
   return (
-    <div className="fixed top-0 h-screen bg-opacity-40 bg-neutral-950 w-full flex justify-end">
-      <div onClick={handleHideMenu} className="bg-black w-1/2 h-full text-white">
-        close
-      </div>
-    </div>
+    <ul
+      className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 
+           md:flex-row md:mt-0 md:border-0 md:bg-white"
+    >
+      <li>
+        <a
+          href="/"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                md:hover:text-darkTangerine md:p-0"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                 md:hover:text-darkTangerine md:p-0"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="/programs"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent 
+                md:hover:text-darkTangerine md:p-0"
+        >
+          Programs
+        </a>
+      </li>
+      <li>
+        <a
+          href="/teams"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent 
+                md:hover:text-darkTangerine md:p-0"
+        >
+          Teams
+        </a>
+      </li>
+    </ul>
   );
 }
 export default Menu;
