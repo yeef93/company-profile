@@ -5,7 +5,7 @@ interface User {
     uuid: string;
   };
   picture: {
-    thumbnail: string;
+    large: string;
   };
   name: {
     first: string;
@@ -18,8 +18,8 @@ interface User {
   };
   role: string;
   socialMedia: {
+    facebook: string;
     twitter: string;
-    linkedin: string;
   };
 }
 
@@ -33,29 +33,24 @@ const roles = [
 
 const socialMediaLinks = [
   {
+    facebook:"facebook.com/pastrychef",
     twitter: "@pastrychef",
-    linkedin: "linkedin.com/in/pastrychef",
-    instagram: "instagram.com/pastrychef",
   },
   {
+    facebook:"facebook.com/bakerymanager",
     twitter: "@bakerymanager",
-    linkedin: "linkedin.com/in/bakerymanager",
-    instagram: "instagram.com/bakerymanager",
   },
   {
-    twitter: "@culinaryinstructor",
-    linkedin: "linkedin.com/in/culinaryinstructor",
-    instagram: "instagram.com/culinaryinstructor",
+    facebook:"facebook.com/culinaryinstructor",
+    twitter: "@culinaryinstructor",    
   },
   {
+    facebook:"facebook.com/headbaker",
     twitter: "@headbaker",
-    linkedin: "linkedin.com/in/headbaker",
-    instagram: "instagram.com/headbaker",
   },
   {
+    facebook:"facebook.com/patisseriespecialist",
     twitter: "@patisseriespecialist",
-    linkedin: "linkedin.com/in/patisseriespecialist",
-    instagram: "instagram.com/patisseriespecialist",
   },
 ];
 
