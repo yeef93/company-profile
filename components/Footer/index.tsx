@@ -52,16 +52,13 @@ function Footer() {
               About Us
             </h1>
             <p className="mb-4">
-              <a href="#!">Angular</a>
+              <a href="#!">History</a>
             </p>
             <p className="mb-4">
-              <a href="#!">React</a>
+              <a href="#!">Team</a>
             </p>
             <p className="mb-4">
-              <a href="#!">Vue</a>
-            </p>
-            <p>
-              <a href="#!">Laravel</a>
+              <a href="#!">Culture</a>
             </p>
           </div>
           <div className="md:col-span-1 lg:col-span-1">

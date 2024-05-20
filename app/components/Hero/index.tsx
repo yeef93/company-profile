@@ -31,7 +31,7 @@ function Hero() {
                 Don&apos;t miss the chance to learn from expert chefs and become
                 a professional chef in the industry.
               </p>
-              <Button text="Join Us" link="" />
+              <Button text="Join Us" link="/register" />
             </div>
             <div className="pt-8 lg:pt-16 grid grid-cols-1 sm:grid-cols-3 gap-y-8 sm:gap-y-0 sm:gap-x-8 w-full">
               <div className="text-center sm:border-r-2 sm:last:border-r-0">
