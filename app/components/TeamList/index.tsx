@@ -24,14 +24,14 @@ const TeamList: React.FC = () => {
           {teams.map((user) => (
             <div
               key={user.login.uuid}
-              className="text-center text-gray-500 dark:text-gray-400"
+              className="text-center text-gray-500 "
             >
               <img
                 className="mx-auto mb-4 w-36 h-36 rounded-full"
                 src={user.picture.large}
                 alt="Bonnie Avatar"
               />
-              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
               {`${user.name.first} ${user.name.last}`}
               </h3>
               <p>{user.role}</p>
@@ -39,7 +39,7 @@ const TeamList: React.FC = () => {
                 <li>
                   <a
                     href={user.socialMedia.facebook}
-                    className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+                    className="text-[#39569c] hover:text-gray-900 "
                   >
                     <svg
                       className="w-6 h-6"
@@ -58,7 +58,7 @@ const TeamList: React.FC = () => {
                 <li>
                   <a
                     href={user.socialMedia.twitter}
-                    className="text-[#00acee] hover:text-gray-900 dark:hover:text-white"
+                    className="text-[#00acee] hover:text-gray-900 "
                   >
                     <svg
                       className="w-6 h-6"
