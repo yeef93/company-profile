@@ -2,6 +2,7 @@
 import React from "react";
 import useTeams from "@/hooks/useTeams";
 import Title from "@/components/Title";
+import Image from "next/image";
 
 const TeamList: React.FC = () => {
   const { teams, loading, error } = useTeams(
@@ -22,17 +23,16 @@ const TeamList: React.FC = () => {
         </Title>
         <div className=" flex flex-row items-center justify-center gap-10 py-10">
           {teams.map((user) => (
-            <div
-              key={user.login.uuid}
-              className="text-center text-gray-500 "
-            >
-              <img
+            <div key={user.login.uuid} className="text-center text-gray-500 ">
+              <Image
                 className="mx-auto mb-4 w-36 h-36 rounded-full"
                 src={user.picture.large}
-                alt="Bonnie Avatar"
+                alt={user.name.first}
+                width={420}
+                height={420}
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-              {`${user.name.first} ${user.name.last}`}
+                {`${user.name.first} ${user.name.last}`}
               </h3>
               <p>{user.role}</p>
               <ul className="flex justify-center mt-4 space-x-4">
