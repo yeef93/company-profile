@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/Button";
 import TwoContent from "@/components/TwoContent";
 import BackgroundImage from "@/components/BackgroundImage";
