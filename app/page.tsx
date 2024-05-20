@@ -4,8 +4,7 @@ import Faq from "./components/Faq";
 import About from "./components/About";
 import Promote from "./components/Promote";
 import Programs from "./programs/page";
-import Teams from "./components/Teams";
-import DataFetcher from "@/hooks/DataFetcher"
+import TeamList from "./components/TeamList";
 
 export default function Home() {
   return (
@@ -15,9 +14,8 @@ export default function Home() {
       <Promote/>
       <Programs/>
       <Testimonials/>
-      <Faq/>    
-      <Teams/>
-      <DataFetcher/>
+      <Faq/>   
+      <TeamList/>
     </>
   );
 }
