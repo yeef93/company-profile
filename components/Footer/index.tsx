@@ -52,13 +52,13 @@ function Footer() {
               About Us
             </h1>
             <p className="mb-4">
-              <a href="#!">History</a>
+              <a href="/about">History</a>
             </p>
             <p className="mb-4">
-              <a href="#!">Team</a>
+              <a href="/about">Team</a>
             </p>
             <p className="mb-4">
-              <a href="#!">Culture</a>
+              <a href="/about">Culture</a>
             </p>
           </div>
           <div className="md:col-span-1 lg:col-span-1">
