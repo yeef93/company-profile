@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/assets/logo-orange.png";
-import { useContext, useEffect, useState } from "react";
 import MenuContext from "@/context/MenuContext";
 
 function Header() {
@@ -18,6 +17,7 @@ function Header() {
   };
 
   const handleClickButton = () => {
+    setShowing((prev) => !prev);
     setGlobalMenuShowing();
   };
 
@@ -39,14 +39,12 @@ function Header() {
           </button>
           <button
             onClick={handleClickButton}
-            onMouseLeave={handleToggleMenuButton}
-            onMouseEnter={handleToggleMenuButton}
             data-collapse-toggle="navbar-sticky"
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden
-             hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+             hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky"
-            aria-expanded="false"
+            aria-expanded={showing ? "true" : "false"}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -66,7 +64,7 @@ function Header() {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${showing ? '' : 'hidden'}`}
           id="navbar-sticky"
         >
           <ul
