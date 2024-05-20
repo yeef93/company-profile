@@ -6,7 +6,7 @@ import programdata from "@/utils/program";
 
 function Program() {
   return (
-    <section className=" h-full">
+    <section>
       <TwoContent title="Bon Appétit Programs">
         <div className=" grid grid-cols-1 gap-10">
           {programdata.map((item) => {

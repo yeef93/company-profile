@@ -4,7 +4,7 @@ import promotedata from "@/utils/promote";
 
 function Promote() {
   return (
-    <section className="bg-yellow-300 py-4 ">
+    <section className="bg-yellow-300 py-4 h-1/2 ">
       <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <Title>
            Why <span className=" highlight">Bon Appétit?</span>

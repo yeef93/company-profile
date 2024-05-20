@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const TeamList: React.FC = () => {
   const { teams, loading, error } = useTeams(
-    "https://randomuser.me/api/?nat=gb&results=5"
+    "https://randomuser.me/api/?nat=gb&results=6"
   );
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <section className="bg-white">
+    <section className="bg-white h-1/2 w-full">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
           Teams
@@ -22,23 +22,23 @@ const TeamList: React.FC = () => {
           Our <span className=" highlight">People.</span>
         </Title>
         <div className=" flex flex-row items-center justify-center gap-10 py-10">
-          {teams.map((user) => (
-            <div key={user.login.uuid} className="text-center text-gray-500 ">
+          {teams.map((team) => (
+            <div key={team.login.uuid} className="text-center text-gray-500 ">
               <Image
                 className="mx-auto mb-4 w-36 h-36 rounded-full"
-                src={user.picture.large}
-                alt={user.name.first}
+                src={team.picture.large}
+                alt={team.name.first}
                 width={420}
                 height={420}
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
-                {`${user.name.first} ${user.name.last}`}
+                {`${team.name.first} ${team.name.last}`}
               </h3>
-              <p>{user.role}</p>
+              <p>{team.role}</p>
               <ul className="flex justify-center mt-4 space-x-4">
                 <li>
                   <a
-                    href={user.socialMedia.facebook}
+                    href={team.socialMedia.facebook}
                     className="text-[#39569c] hover:text-gray-900 "
                   >
                     <svg
@@ -57,7 +57,7 @@ const TeamList: React.FC = () => {
                 </li>
                 <li>
                   <a
-                    href={user.socialMedia.twitter}
+                    href={team.socialMedia.twitter}
                     className="text-[#00acee] hover:text-gray-900 "
                   >
                     <svg

@@ -5,7 +5,7 @@ import BackgroundImage from "@/components/BackgroundImage";
 
 function About() {
   return (
-    <section className=" h-full">
+    <section className=" h-screen w-full">
       <BackgroundImage imageUrl="bg1.jpg">-</BackgroundImage>
       <TwoContent title="About Us">
         <div>

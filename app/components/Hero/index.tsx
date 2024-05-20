@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import hero from "@/public/assets/hero/hero.webp";
 import Button from "@/components/Button";
@@ -6,10 +7,10 @@ import DottedPattern from "@/components/DottedPattern";
 function Hero() {
   return (
     <section>
-      <div className=" w-full flex lg:flex-row md:flex-col justify-center py-20 gap-6">
+      <div className="h-screen w-full flex lg:flex-row md:flex-col justify-center py-20 gap-6">
         <div>
           <div className="mx-auto max-w-xl text-left pt-16">
-            <h2 className="text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
               Ignite Your Passion,
               <span className="highlight"> Refine Your Skills</span>
             </h2>
@@ -65,7 +66,7 @@ function Hero() {
           <Image
             alt="hero"
             src={hero}
-            className="object-cover rounded-s-3xl"
+            className="object-cover rounded-s-3xl h-auto"
             width={400}
             height={400}
           />

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Testimonials() {
   return (
-    <section className="bg-white">
+    <section className="bg-yellow-300 ">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">Testimonial</h2>
         <Title>What people are <span className=" highlight">saying.</span></Title>
@@ -13,7 +13,7 @@ function Testimonials() {
             return (
               <blockquote
                 key={item.id}
-                className="rounded-lg bg-gray-50 p-0 shadow-sm sm:p-8 hover:shadow-lg hover:bg-yellow-200"
+                className="group rounded-lg bg-gray-50 p-0 shadow-sm p-8 hover:shadow-lg "
               >
                 <div className="flex items-center gap-4">
                   <Image
