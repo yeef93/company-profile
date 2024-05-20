@@ -2,8 +2,25 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "@/public/assets/logo-orange.png";
+import { useContext, useEffect, useState } from "react";
+import MenuContext from "@/context/MenuContext";
 
 function Header() {
+  const [showing, setShowing] = useState<boolean>(false);
+  const { setShowing: setGlobalMenuShowing } = useContext(MenuContext);
+
+  useEffect(() => {
+    console.log("showing state:", showing);
+  }, [showing]);
+
+  const handleToggleMenuButton = () => {
+    setShowing((prev) => !prev);
+  };
+
+  const handleClickButton = () => {
+    setGlobalMenuShowing();
+  };
+
   return (
     <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -21,6 +38,9 @@ function Header() {
             Register
           </button>
           <button
+            onClick={handleClickButton}
+            onMouseLeave={handleToggleMenuButton}
+            onMouseEnter={handleToggleMenuButton}
             data-collapse-toggle="navbar-sticky"
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden

@@ -13,7 +13,7 @@ function Program() {
       <Title>
         <span className=" highlight">Bon Appétit</span>Programs
       </Title>
-      <div className=" grid grid-cols-3 gap-10 p-10">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-1 gap-10 p-10">
         {programdata.map((item) => {
           return (
             <a

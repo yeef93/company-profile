@@ -2,7 +2,7 @@
 import MenuContext from "@/context/MenuContext";
 import { useContext } from "react";
 
-const Menu: React.FC = () => {
+function Menu(){
   const { menuShowing, setShowing } = useContext(MenuContext);
   const handleHideMenu = () => {
     setShowing();
@@ -15,6 +15,5 @@ const Menu: React.FC = () => {
       </div>
     </div>
   );
-};
-
+}
 export default Menu;
