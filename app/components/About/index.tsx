@@ -22,7 +22,7 @@ function About() {
           and Pastry. Graduates from Bon Appétit School shall be also with critical
           thinking skill that will help them to strive in their career..
         </div>
-        <Button text="Read More" />
+        <Button text="Read More" link="/about" />
       </TwoContent>
     </section>
   );

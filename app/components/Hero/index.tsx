@@ -30,7 +30,7 @@ function Hero() {
               Don&apos;t miss the chance to learn from export chefs and become
               professional chef in the industry
             </p>
-            <Button text="Join Us" />
+            <Button text="Join Us" link="" />
           </div>
           <div className="pt-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-y-8 ">
             <div className="mb-12 text-center border-r-0 md:mb-0 md:border-r-2 md:last:border-r-0">
