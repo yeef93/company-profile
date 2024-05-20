@@ -70,7 +70,7 @@ function Footer() {
             </h1>
             {uniqueGroupNames.map(groupName => (
               <p className="mb-4" key={groupName}>
-                <a href="#!">{groupName}</a>
+                <a href="/programs">{groupName}</a>
               </p>
             ))}
           </div>

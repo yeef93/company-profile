@@ -3,6 +3,7 @@ import React from "react";
 import useTeams from "@/hooks/useTeams";
 import Title from "@/components/Title";
 import Image from "next/image";
+import teamHover from "@/public/assets/team/teamHover.webp"
 
 const Teams: React.FC = () => {
   const { teams, loading, error } = useTeams(
@@ -14,7 +15,7 @@ const Teams: React.FC = () => {
 
   return (
     <section className="bg-white ">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+      <div className="px-4 mx-auto max-w-screen-xl lg:px-6 ">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
             Teams
@@ -28,8 +29,7 @@ const Teams: React.FC = () => {
           {teams.map((team) => (
             <a
               key={team.login.uuid}
-              href="#"
-              className="group block overflow-hidden"
+              className="group block overflow-hidden border rounded-xl  pb-8"
             >
               <div className="relative h-[350px] sm:h-[450px]">
                 <Image
@@ -47,11 +47,12 @@ const Teams: React.FC = () => {
                   height={100}
                 />
               </div>
+              <div className=" p-4">
               <div className="relative bg-white pt-3">
                 <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
                   {team.role}
                 </h3>
-                <p className="mt-1.5 tracking-wide text-gray-900">{`${team.name.first} ${team.name.last}`}</p>
+                <p className="mt-1.5 tracking-wide text-gray-900 font-semibold">{`${team.name.first} ${team.name.last}`}</p>
               </div>
               <ul className="flex space-x-4 sm:mt-0">
                 <li>
@@ -89,6 +90,7 @@ const Teams: React.FC = () => {
                   </a>
                 </li>
               </ul>
+              </div>              
             </a>
           ))}
         </div>

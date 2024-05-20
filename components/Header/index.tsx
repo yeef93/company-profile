@@ -89,15 +89,6 @@ function Header() {
                 Teams
               </a>
             </li>
-            <li>
-              <a
-                href="/contact"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent 
-                md:hover:text-darkTangerine md:p-0"
-              >
-                Contact
-              </a>
-            </li>
           </ul>
         </div>
       </div>
