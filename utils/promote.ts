@@ -12,7 +12,7 @@ export default[
         title: "Modern Facilities",
         desc: "Train in state-of-the-art kitchens with the latest baking technology.",
         image: "modern.webp",  
-        bg:"bg-teal-200"
+        bg:"bg-red-200"
     },
     {
         id: 2,

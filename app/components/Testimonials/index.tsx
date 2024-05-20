@@ -13,7 +13,7 @@ function Testimonials() {
             return (
               <blockquote
                 key={item.id}
-                className="rounded-lg bg-gray-50 p-0 shadow-sm sm:p-8 hover:shadow-lg"
+                className="rounded-lg bg-gray-50 p-0 shadow-sm sm:p-8 hover:shadow-lg hover:bg-yellow-200"
               >
                 <div className="flex items-center gap-4">
                   <Image
@@ -28,7 +28,7 @@ function Testimonials() {
                     <p className="mt-0.5 text-lg font-medium text-gray-900">
                       {item.name}
                     </p>
-                    <span className=" text-gray-500 text-sm ">
+                    <span className=" text-stabiloOrange text-sm ">
                       Student From {item.origin}
                     </span>
                   </div>

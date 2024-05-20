@@ -4,7 +4,7 @@ import faqdata from "@/utils/faq";
 
 function Faq() {
   return (
-    <section className=" h-full">
+    <section className=" h-full ">
       <TwoContent title="Frequently Asked Questions">
         <div className="mx-auto grid max-w-xl divide-y divide-neutral-200">
         {faqdata.map((item) => {

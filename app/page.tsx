@@ -3,6 +3,8 @@ import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
 import Promote from "./components/Promote";
+import Programs from "./programs/page";
+import Teams from "./components/Teams";
 
 export default function Home() {
   return (
@@ -10,15 +12,10 @@ export default function Home() {
       <Hero />        
       <About/>   
       <Promote/>
-      {/* company overview */}
-      {/* product or services */}
-      {/* Testimonials */}
-      {/* company overview */}
-      {/* company overview */}
-      {/* About Us */}
-      {/* Products */}
+      <Programs/>
       <Testimonials/>
-      <Faq/>      
+      <Faq/>    
+      <Teams/>
     </>
   );
 }
