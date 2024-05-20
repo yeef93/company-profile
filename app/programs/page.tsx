@@ -51,29 +51,24 @@ function Programs() {
                 <div className="w-full sm:w-1/2 mb-4 px-2 ">
                   <div className="h-full py-4 px-6 border border-yellow-300 border-t-0 border-l-0 rounded-br-xl">
                     <h3 className="text-2xl font-bold text-md mb-6">
-                      Mobile-Optimized Interface
+                      Curriculum:
                     </h3>
-                    <p className="text-sm">
-                      {" "}
-                      Our website is designed with a mobile-first approach,
-                      offering a seamless browsing experience across all
-                      devices, including smartphones and tablets.
-                    </p>
+                    <ul className="list-disc ml-4">
+                      {item.curriculum.map((highlight, index) => (
+                        <li key={index} className="text-sm">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
                 <div className="w-full sm:w-1/2 mb-4 px-2 ">
                   <div className="h-full py-4 px-6 border border-yellow-300 border-t-0 border-l-0 rounded-br-xl">
                     <h3 className="text-2xl font-bold text-md mb-6">
-                      24/7 Customer Support
+                      Opportunities:
                     </h3>
-                    <p className="text-sm">
-                      ur U.S.-based customer support team is available around
-                      the clock to answer any questions, resolve any issues, and
-                      provide helpful solutions. Whether it&apos;s through
-                      email, phone, or live chat, we&apos;re always here to
-                      support you.
-                    </p>
+                    <p className="text-sm">{item.opportunities}</p>
                   </div>
                 </div>
 
@@ -91,7 +86,7 @@ function Programs() {
         );
       })}
 
-      <Testimonials/>
+      <Testimonials />
     </section>
   );
 }
