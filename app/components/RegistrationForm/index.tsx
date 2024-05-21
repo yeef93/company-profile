@@ -36,7 +36,7 @@ const RegistrationForm = () => {
 
   return (
     <div className="max-w-md mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">
+      <h2 className="text-2xl font-bold mb-4 text-center">
         <span className="highlight">Bon Appétit</span> Cuisine & Patisserie
         School Registration
       </h2>
