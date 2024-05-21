@@ -3,13 +3,13 @@ import { aboutData } from "@/utils/aboutUs";
 import Title from "@/components/Title";
 import TeamList from "../components/TeamList";
 import RunningText from "@/components/RunningText";
-import ContentImgRight from "@/components/TwoContentImg";
-import barista from "@/public/assets/program/barista.webp";
+import TwoContentImg from "@/components/TwoContentImg";
+import cuisine from "@/public/assets/program/cuisineimage.webp";
 
 function About() {
   return (
     <div>
-      <ContentImgRight className=" flex-row-reverse -mt-3 " image={barista}>
+      <TwoContentImg className=" flex-row-reverse -mt-3 " image={cuisine}>
         <div className="mx-auto max-w-screen-sm text-center ">
           <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
             About
@@ -24,7 +24,7 @@ function About() {
         <p className=" p-2">{aboutData.vision}</p>
         <Title>Mision</Title>
         <p className=" p-2">{aboutData.mission}</p>
-      </ContentImgRight>
+      </TwoContentImg>
       <RunningText className=" bg-tangerine p-2">
         <p className=" text-white lg:text-4xl md:text-xl">
           {aboutData.culture.values}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import Logo from "@/public/assets/logo-orange.png";
 import MenuContext from "@/context/MenuContext";
@@ -8,6 +9,7 @@ import Menu from "../Menu";
 function Header() {
   const [showing, setShowing] = useState<boolean>(false);
   const { setShowing: setGlobalMenuShowing } = useContext(MenuContext);
+  const router = useRouter();
 
   useEffect(() => {
     console.log("showing state:", showing);
@@ -22,6 +24,10 @@ function Header() {
     setGlobalMenuShowing();
   };
 
+  const handleRegisterClick = () => {
+    router.push('/register');
+  };
+
   return (
     <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -34,6 +40,7 @@ function Header() {
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <button
             type="button"
+            onClick={handleRegisterClick}
             className="text-white bg-darkTangerine hover:bg-darkerTangerine focus:ring-4 focus:outline-none focus:ring-darkTangerine font-medium rounded-lg text-sm px-4 py-2 text-center"
           >
             Register
@@ -68,7 +75,7 @@ function Header() {
           className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${showing ? '' : 'hidden'}`}
           id="navbar-sticky"
         >
-          <Menu/>
+          <Menu />
         </div>
       </div>
     </nav>

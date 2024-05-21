@@ -1,44 +1,56 @@
 "use client";
-import React, { useState } from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import React, { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const RegistrationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const formik = useFormik({
     initialValues: {
-      name: '',
-      dateOfBirth: '',
-      program: '',
-      education: '',
-      phoneNumber: '',
-      address: '',
+      name: "",
+      dateOfBirth: "",
+      program: "",
+      education: "",
+      phoneNumber: "",
+      address: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required('Required'),
-      dateOfBirth: Yup.date().required('Required'),
-      program: Yup.string().required('Required'),
-      education: Yup.string().required('Required'),
-      phoneNumber: Yup.string().required('Required'),
-      address: Yup.string().required('Required'),
+      name: Yup.string().required("Required"),
+      dateOfBirth: Yup.date().required("Required"),
+      program: Yup.string().required("Required"),
+      education: Yup.string().required("Required"),
+      phoneNumber: Yup.string()
+        .required("Required")
+        .matches(/^[0-9]+$/, "Must be only digits")
+        .min(10, "Must be at least 10 characters")
+        .max(10, "Must not exceed 10 characters"),
+      address: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
       // Simulate a successful registration
-      console.log('Registration successful', values);
+      console.log("Registration successful", values);
       setIsSubmitted(true);
     },
   });
 
   return (
     <div className="max-w-md mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Bakery School Registration</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        <span className="highlight">Bon Appétit</span> Cuisine & Patisserie
+        School Registration
+      </h2>
       {isSubmitted ? (
         <div className="text-green-500">Registration successful!</div>
       ) : (
         <form onSubmit={formik.handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Name
+            </label>
             <input
               id="name"
               name="name"
@@ -54,7 +66,12 @@ const RegistrationForm = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="dateOfBirth" className="block text-sm font-medium text-gray-700">Date of Birth</label>
+            <label
+              htmlFor="dateOfBirth"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Date of Birth
+            </label>
             <input
               id="dateOfBirth"
               name="dateOfBirth"
@@ -65,12 +82,19 @@ const RegistrationForm = () => {
               value={formik.values.dateOfBirth}
             />
             {formik.touched.dateOfBirth && formik.errors.dateOfBirth ? (
-              <div className="text-red-500 text-sm">{formik.errors.dateOfBirth}</div>
+              <div className="text-red-500 text-sm">
+                {formik.errors.dateOfBirth}
+              </div>
             ) : null}
           </div>
 
           <div className="mb-4">
-            <label htmlFor="program" className="block text-sm font-medium text-gray-700">Program</label>
+            <label
+              htmlFor="program"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Program
+            </label>
             <select
               id="program"
               name="program"
@@ -85,12 +109,19 @@ const RegistrationForm = () => {
               <option value="Barista" label="Barista" />
             </select>
             {formik.touched.program && formik.errors.program ? (
-              <div className="text-red-500 text-sm">{formik.errors.program}</div>
+              <div className="text-red-500 text-sm">
+                {formik.errors.program}
+              </div>
             ) : null}
           </div>
 
           <div className="mb-4">
-            <label htmlFor="education" className="block text-sm font-medium text-gray-700">Latest Education</label>
+            <label
+              htmlFor="education"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Latest Education
+            </label>
             <input
               id="education"
               name="education"
@@ -101,12 +132,19 @@ const RegistrationForm = () => {
               value={formik.values.education}
             />
             {formik.touched.education && formik.errors.education ? (
-              <div className="text-red-500 text-sm">{formik.errors.education}</div>
+              <div className="text-red-500 text-sm">
+                {formik.errors.education}
+              </div>
             ) : null}
           </div>
 
           <div className="mb-4">
-            <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <label
+              htmlFor="phoneNumber"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Phone Number
+            </label>
             <input
               id="phoneNumber"
               name="phoneNumber"
@@ -117,12 +155,19 @@ const RegistrationForm = () => {
               value={formik.values.phoneNumber}
             />
             {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-              <div className="text-red-500 text-sm">{formik.errors.phoneNumber}</div>
+              <div className="text-red-500 text-sm">
+                {formik.errors.phoneNumber}
+              </div>
             ) : null}
           </div>
 
           <div className="mb-4">
-            <label htmlFor="address" className="block text-sm font-medium text-gray-700">Address</label>
+            <label
+              htmlFor="address"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Address
+            </label>
             <textarea
               id="address"
               name="address"
@@ -132,7 +177,9 @@ const RegistrationForm = () => {
               value={formik.values.address}
             />
             {formik.touched.address && formik.errors.address ? (
-              <div className="text-red-500 text-sm">{formik.errors.address}</div>
+              <div className="text-red-500 text-sm">
+                {formik.errors.address}
+              </div>
             ) : null}
           </div>
 
@@ -149,4 +196,3 @@ const RegistrationForm = () => {
 };
 
 export default RegistrationForm;
-

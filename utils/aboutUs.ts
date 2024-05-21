@@ -1,10 +1,11 @@
 export const aboutData = {
   aboutUs: `
-      Bon Appétit is a market leading educator that is revolving around the Cookery and Pastry industry. 
-      As a school who dedicates all of the passion in Cookery and Pastry industry, we value our students and we are very student oriented. 
-      With the guidance provided by our educators, we will help our students to grow their culinary skills and meanwhile we are trying our best to build their character and creativity as a chef. 
-      All students who are from Bon Appétit School shall be ready for working environment, especially in their respective expertise in both Cookery and Pastry. 
-      Graduates from Bon Appétit School shall be also with critical thinking skill that will help them to strive in their career.
+  Bon Appétit is a market-leading educator that is revolving around the Cookery and Pastry industry. 
+  Since 2018, we have been dedicated to this field and have successfully produced over 300 high-quality alumni. 
+  As a school that dedicates all of its passion to the Cookery and Pastry industry, we value our students and are very student-oriented. 
+  With the guidance provided by our educators, we help our students grow their culinary skills while striving to build their character and creativity as chefs. 
+  All students from Bon Appétit School are prepared for the working environment, especially in their respective expertise in both Cookery and Pastry. 
+  Graduates from Bon Appétit School also possess critical thinking skills that help them excel in their careers.
     `,
   companyHistory: `
     Our bakery, patisserie, and barista school was founded with the vision of providing top-quality training to individuals passionate about the culinary arts. 
