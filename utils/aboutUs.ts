@@ -19,8 +19,6 @@ export const aboutData = {
     `,
   culture: {
     values: "Quality • Creativity • Innovation • Community",
-    workEnvironment:
-      "Collaborative, inclusive, and supportive, where employees are encouraged to share ideas and grow professionally.",
     detail: ` 
           At our bakery, patisserie, and barista school, we foster a culture of creativity, collaboration, and excellence. We believe in fostering a supportive and inclusive learning environment. 
         Our culture is built on a foundation of creativity, collaboration, and continuous improvement. 

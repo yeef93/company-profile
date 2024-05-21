@@ -1,4 +1,5 @@
-const DottedPattern = () => (
+function DottedPattern() {
+  return (
     <svg
       viewBox="0 0 52 24"
       fill="currentColor"
@@ -22,6 +23,6 @@ const DottedPattern = () => (
       />
     </svg>
   );
-  
-  export default DottedPattern;
-  
+}
+
+export default DottedPattern;
