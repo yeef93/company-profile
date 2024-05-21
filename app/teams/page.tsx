@@ -3,7 +3,6 @@ import React from "react";
 import useTeams from "@/hooks/useTeams";
 import Title from "@/components/Title";
 import Image from "next/image";
-import teamHover from "@/public/assets/team/teamHover.webp";
 
 function Teams() {
   const { teams, loading, error } = useTeams(

@@ -12,20 +12,6 @@ main {
   padding: 10vh;
 }
 
-@keyframes objectLooping {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-200%);
-  }
-}
-
-.animate-objectLooping {
-  animation: moveLooping 30s linear infinite;
-}
-
 .highlight {
   margin: 0;
   line-height: 1.5;

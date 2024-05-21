@@ -2,10 +2,9 @@ import React from "react";
 import Image from "next/image";
 import socmeddata from "@/utils/socmed";
 import Logo from "@/public/assets/logo-white.png";
-import programs from "@/utils/program"; // Import the programs data
+import programs from "@/utils/program"; 
 
 function Footer() {
-  // Extract unique group names
   const uniqueGroupNames = [...new Set(programs.map(program => program.groupName))];
 
   return (
@@ -52,7 +51,7 @@ function Footer() {
               About Us
             </h1>
             <p className="mb-4">
-              <a href="/about">History</a>
+              <a href="/about">Overview</a>
             </p>
             <p className="mb-4">
               <a href="/about">Team</a>
