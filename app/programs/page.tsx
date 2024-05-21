@@ -75,7 +75,7 @@ function Programs() {
                 <div className="w-full sm:w-1/2 mb-4 px-2">
                   <div className="h-full py-4 px-6 border border-yellow-500 border-t-0 border-l-0 rounded-br-xl bg-yellow-500 font-bold">
                     Price:
-                    <h3 className=" lg:text-8xl sm:text-4xl font-bold text-md mb-6 text-white">
+                    <h3 className=" text-8xl font-bold text-md mb-6 text-white">
                       {item.price}
                     </h3>
                   </div>

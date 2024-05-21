@@ -5,8 +5,9 @@ import MenuContext from "./MenuContext";
 interface MenuProviderProps {
   children: JSX.Element | ReactNode;
 }
-const MenuProvider: React.FC<MenuProviderProps> = ({ children }) => {
-  const [menuShowing, setMenuShowing] = useState<boolean>(false);
+
+function MenuProvider({children}:MenuProviderProps){
+  const [menuShowing, setMenuShowing] = useState<boolean>(false)
 
   const handleToggleMenu = () => {
     setMenuShowing(prev => !prev);
@@ -17,6 +18,6 @@ const MenuProvider: React.FC<MenuProviderProps> = ({ children }) => {
       {children}
     </MenuContext.Provider>
   );
-};
+}
 
 export default MenuProvider;
