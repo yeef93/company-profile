@@ -2,6 +2,7 @@ import React from "react";
 import { aboutData } from "@/utils/aboutUs";
 import TwoContent from "@/components/TwoContent";
 import Title from "@/components/Title";
+import TwoContentRight from "@/components/TwoContentRight";
 
 function About() {
   return (
@@ -21,9 +22,9 @@ function About() {
         </TwoContent>
       </div>
       <div>
-        <TwoContent title="Vision">
+        <TwoContentRight title="Vision">
           <p>{aboutData.vision}</p>
-        </TwoContent>
+        </TwoContentRight>
       </div>
       <div>
         <TwoContent title="Mission">
