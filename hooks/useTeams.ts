@@ -33,31 +33,31 @@ const roles = [
 
 const description = [
   "With over 15 years of experience in the culinary industry, John leads our team of talented chefs.",
-  "Jane specializes in creating exquisite pastries and desserts, bringing creativity and innovation to our curriculum.",
-  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
-  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
-  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
+  "Specializes in creating exquisite pastries and desserts, bringing creativity and innovation to our curriculum.",
+  "Certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
+  "Background in international cuisine and a passion for teaching. She brings a wealth of knowledge to our culinary program.",
+  "Accomplished sous chef with a talent for mentoring students and helping them refine their cooking techniques.",
 ];
 
 const socialMediaLinks = [
   {
-    facebook:"facebook.com/pastrychef",
+    facebook: "facebook.com/pastrychef",
     twitter: "@pastrychef",
   },
   {
-    facebook:"facebook.com/bakerymanager",
+    facebook: "facebook.com/bakerymanager",
     twitter: "@bakerymanager",
   },
   {
-    facebook:"facebook.com/culinaryinstructor",
-    twitter: "@culinaryinstructor",    
+    facebook: "facebook.com/culinaryinstructor",
+    twitter: "@culinaryinstructor",
   },
   {
-    facebook:"facebook.com/headbaker",
+    facebook: "facebook.com/headbaker",
     twitter: "@headbaker",
   },
   {
-    facebook:"facebook.com/patisseriespecialist",
+    facebook: "facebook.com/patisseriespecialist",
     twitter: "@patisseriespecialist",
   },
 ];

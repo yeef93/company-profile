@@ -41,10 +41,15 @@ const config: Config = {
           "100%": {
             borderColor: "white"
           }
+        },
+        scroll: {
+          '0%': { transform: 'translateX(400%)' },
+          '100%': { transform: 'translateX(-100%)' },
         }
       },
       animation: {
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        scroll: 'scroll 20s linear infinite',
       }
     },
   },

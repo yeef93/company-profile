@@ -65,12 +65,10 @@ function Header() {
           </button>
         </div>
         <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
-            showing ? "" : "hidden"
-          }`}
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${showing ? '' : 'hidden'}`}
           id="navbar-sticky"
         >
-          <Menu />
+          <Menu/>
         </div>
       </div>
     </nav>

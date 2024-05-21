@@ -5,7 +5,7 @@ interface accordionProps{
 
 function Accordion({question, answer}:accordionProps) {
   return (
-    <div className="py-5">
+    <div className="py-5 px-2">
       <details className="group">
         <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
           <span> {answer}</span>

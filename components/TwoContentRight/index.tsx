@@ -7,7 +7,7 @@ interface TwoContentProps {
 
 function TwoContentRight({ title, children }: TwoContentProps) {
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 py-10 ">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 py-10 px-2 ">
       <div
         className="lg:col-span-2 lg:pl-10 lg:pr-56 sm:p-2
       "
