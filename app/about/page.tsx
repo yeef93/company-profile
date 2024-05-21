@@ -1,23 +1,40 @@
-import BackgroundImage from "@/components/BackgroundImage";
+import React from "react";
+import { aboutData } from "@/utils/aboutUs";
+import TwoContent from "@/components/TwoContent";
 import Title from "@/components/Title";
-import TeamList from "../components/TeamList";
 
 function About() {
   return (
-    <section className="bg-white ">
-      <div className="px-4 mx-auto max-w-screen-xl lg:px-6 ">
-        <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
-            About Us
-          </h2>
-          <Title>
-           About 
-            <span className=" highlight"> Bon Appétit</span>
-          </Title>          
-        </div>
+    <div>
+      <div className="mx-auto max-w-screen-sm text-center ">
+        <h2 className=" lg:text-sm md:text-xs text-center uppercase text-gray-500">
+          About
+        </h2>
+        <Title>
+          <span className=" highlight">Bon Appétit</span> <br />
+          Cuisine & Patisserie School
+        </Title>
       </div>
-      <TeamList/>
-    </section>
+      <div>
+        <TwoContent title="Overview">
+          <p>{aboutData.companyHistory}</p>
+        </TwoContent>
+      </div>
+      <div>
+        <TwoContent title="Vision">
+          <p>{aboutData.vision}</p>
+        </TwoContent>
+      </div>
+      <div>
+        <TwoContent title="Mission">
+          <p>{aboutData.mission}</p>
+        </TwoContent>
+      </div>
+      <div>
+        <h2>Culture</h2>
+        <p>{aboutData.culture.values}</p>
+      </div>
+    </div>
   );
 }
 

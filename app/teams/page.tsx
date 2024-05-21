@@ -59,6 +59,7 @@ function Teams() {
                     <a
                       href={team.socialMedia.facebook}
                       className="text-gray-500 hover:text-gray-900"
+                      target="_blank"
                     >
                       <svg
                         className="w-5 h-5"
@@ -78,6 +79,7 @@ function Teams() {
                     <a
                       href={team.socialMedia.twitter}
                       className="text-gray-500 hover:text-gray-900"
+                      target="_blank"
                     >
                       <svg
                         className="w-5 h-5"

@@ -31,6 +31,14 @@ const roles = [
   "Patisserie Specialist",
 ];
 
+const description = [
+  "With over 15 years of experience in the culinary industry, John leads our team of talented chefs.",
+  "Jane specializes in creating exquisite pastries and desserts, bringing creativity and innovation to our curriculum.",
+  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
+  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
+  "Michael is a certified barista with a passion for coffee. He shares his expertise and knowledge with our students, helping them master the art of coffee making.",
+];
+
 const socialMediaLinks = [
   {
     facebook:"facebook.com/pastrychef",
