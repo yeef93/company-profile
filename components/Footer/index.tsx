@@ -56,9 +56,6 @@ function Footer() {
             <p className="mb-4">
               <a href="/about">Team</a>
             </p>
-            <p className="mb-4">
-              <a href="/about">Culture</a>
-            </p>
           </div>
           <div className="md:col-span-1 lg:col-span-1">
             <h1 className="mb-4 flex justify-center md:justify-start font-semibold uppercase">
